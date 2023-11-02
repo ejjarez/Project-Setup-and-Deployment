@@ -85,7 +85,7 @@ sf project deploy start --manifest manifest/package.xml --ignore-conflicts
 
 ## Custom Field Changes
 
-## Step 10: Edit Custom Field Metadata
+### Step 10: Edit Custom Field Metadata
 Now we go to our object Order, you'll find the folder called `values`, open it and find the file `SalesStoreId.field-meta.xml`
 ```bash
 cd objects
@@ -94,7 +94,7 @@ cd fields
 nano ElectronicMediaGroup.object-meta.xml
 ```
 
-## Step 11: Update the Field Visibility in SalesStoreId
+### Step 11: Update the Field Visibility in SalesStoreId
 Locate the object trackHistory:
 ```xml
 <trackHistory>false</trackHistory
@@ -104,7 +104,7 @@ It will be false by default, we have to update it to true.
 <trackHistory>true</trackHistory
 ```
 
-## Step 12: 
+### Step 12: Deploy Custom Field Changes
 Initiate the last deployment to update the custom field metadata with the following command.
 ```bash
 sf project deploy start --manifest manifest/package.xml --ignore-conflicts
